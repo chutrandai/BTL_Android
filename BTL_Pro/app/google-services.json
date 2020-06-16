@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "668687767929",
+    "firebase_url": "https://btlpro.firebaseio.com",
+    "project_id": "btlpro",
+    "storage_bucket": "btlpro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668687767929:android:0e690c3bceb644d2f477a8",
+        "android_client_info": {
+          "package_name": "com.example.btl_pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668687767929-l4bklm0bfqk7go2rpbmpqb44hq2rh1ki.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.btl_pro",
+            "certificate_hash": "f540b16a8ab566b0a64f6192ab370d1b507a99c6"
+          }
+        },
+        {
+          "client_id": "668687767929-4neqmlijg6vukgm4v43eosnirl0so83u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwrPh2Wb0u7NqVDWm_HBd15CJ3Rp6P_10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668687767929-4neqmlijg6vukgm4v43eosnirl0so83u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

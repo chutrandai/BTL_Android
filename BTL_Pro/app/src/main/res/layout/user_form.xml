@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Thêm mới tài khoản đăng nhập"
+        android:background="#99c2ff"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tên đăng nhập"
+        android:textSize="20dp"></TextView>
+    <EditText
+        android:id="@+id/fUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên đăng nhập"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mật khẩu"
+        android:textSize="20dp"></TextView>
+    <EditText
+        android:id="@+id/fPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mật khẩu"></EditText>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="110dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:id="@+id/btnSave"
+            style="@style/Widget.AppCompat.Button.Colored"></Button>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnSave"
+            android:text="Hủy"
+            android:id="@+id/btnCancel"
+            android:background="@drawable/btn_style"></Button>
+    </RelativeLayout>
+
+</LinearLayout>

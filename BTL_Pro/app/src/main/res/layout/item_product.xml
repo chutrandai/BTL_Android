@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_border">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Tên sản phẩm: "
+                android:gravity=""
+                ></TextView>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:id="@+id/tenSp"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Số điện thoại: "
+                android:gravity=""
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:id="@+id/sdt"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Giá bán: "
+                android:gravity=""
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:id="@+id/tCost"
+                ></TextView>
+        </LinearLayout>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Hình ảnh: "
+        android:gravity="center"
+        ></TextView>
+        <ImageView
+            android:id="@+id/iImage_view"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"></ImageView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/Ltrangthai"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        >
+        <Switch
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/contactNow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible"></Switch>
+        <Button
+            android:id="@+id/contactNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Liên hệ ngay"></Button>
+        <TextView
+            android:id="@+id/namePer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactNow"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            ></TextView>
+        <Button
+            android:id="@+id/button_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"></Button>
+    </RelativeLayout>
+
+</LinearLayout>

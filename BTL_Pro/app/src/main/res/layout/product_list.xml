@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Danh sách sản phẩm"
+        android:background="#99c2ff"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeader"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/searchPro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm theo tên sản phẩm">
+            <requestFocus />
+        </EditText>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id="@+id/lv"></ListView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/back_to_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trở về trang chủ"
+        android:layout_alignParentBottom="true"></Button>
+    <Button
+        android:id="@+id/adDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa"
+        android:layout_toRightOf="@+id/back_to_home"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"></Button>
+</RelativeLayout>

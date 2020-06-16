@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Trang chủ"
+        android:background="#99c2ff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity=""
+        ></TextView>
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_style"
+        android:text="Mua đồ"></Button>
+    <Button
+        android:id="@+id/btnSell"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/btnBuy"
+        android:background="@drawable/btn_style"
+        android:text="Bán đồ"></Button>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Thoát"></Button>
+    <Button
+        android:id="@+id/userLoginManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Quản lý tài khoản"
+        android:visibility="invisible"></Button>
+</RelativeLayout>

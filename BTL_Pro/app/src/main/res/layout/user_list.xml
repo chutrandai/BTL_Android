@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Danh sách tài khoản đăng nhập"
+        android:background="#99c2ff"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeader"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm theo tên đăng nhập">
+            <requestFocus />
+        </EditText>
+        <ListView
+            android:id="@+id/lvUser"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"></ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm mới"
+                style="@style/Widget.AppCompat.Button.Colored"></Button>
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xóa"
+                style="@style/Widget.AppCompat.Button.Colored"></Button>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Quay lại"></Button>
+</RelativeLayout>

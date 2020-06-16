@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Thêm sản phẩm"
+        android:background="#99c2ff"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/tensp_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/title_text_view"
+        ></TextView>
+    <EditText
+        android:id="@+id/namePro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Tên sản phẩm"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tensp_text_view"
+        ></EditText>
+    <TextView
+        android:id="@+id/sdt_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại liên hệ"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/namePro"
+        ></TextView>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="số điện thoại"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/sdt_text_view"
+        ></EditText>
+    <TextView
+        android:id="@+id/gt_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá tiền"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/phone"
+        ></TextView>
+    <EditText
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Giá bán"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/gt_text_view"
+        ></EditText>
+    <RelativeLayout
+        android:id="@+id/rl_choose_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cost"
+        android:layout_above="@id/addProduct"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/pf_text_view_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hình ảnh"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            ></TextView>
+        <Button
+            android:id="@+id/button_choose_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pf_text_view_image"
+            android:text="Tải ảnh"
+            android:gravity="bottom"></Button>
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/button_choose_file"
+            ></ImageView>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm sản phẩm"
+        android:id="@+id/addProduct"
+        android:layout_alignParentBottom="true"></Button>
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView android:text = "Login" android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/textview"
+        android:textSize = "35dp"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true" />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "My Market"
+        android:id = "@+id/textView"
+        android:layout_below = "@+id/textview"
+        android:layout_centerHorizontal = "true"
+        android:textColor = "#ff7aff24"
+        android:textSize = "35dp" />
+
+    <EditText
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/userName"
+        android:hint = "Enter Name"
+        android:focusable = "true"
+        android:textColorHighlight = "#ff7eff15"
+        android:textColorHint = "#ffff25e6"
+        android:layout_marginTop = "20dp"
+        android:layout_below = "@+id/imageView"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cho_utc" />
+
+    <EditText
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:id="@+id/passWord"
+        android:layout_below="@+id/userName"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#ffff299f" />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/passWord"
+        android:layout_toStartOf="@+id/textview"
+        android:layout_toLeftOf="@+id/textview"
+        android:text="Login" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/btnCancel"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/passWord"
+        android:layout_toRightOf="@+id/textview"
+        android:layout_toEndOf="@+id/textview" />
+</RelativeLayout>

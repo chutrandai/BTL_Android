@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BTL_Pro</string>
+    <string name="facebook_app_id">578748819499130</string>
+    <string name="fb_login_protocol_scheme">fb578748819499130</string>
+</resources>
